@@ -2,13 +2,16 @@ import React from 'react';
 import styles from './Hero.module.css';
 
 const HeroDefaultProps = {
-  title: 'Bienvenido',
+  backgroundImage: null
 };
 
-const Hero = ({title}) => {
+const Hero = ({backgroundImage}) => {
+  const heroStyle = backgroundImage 
+    ? { backgroundImage: `url(${backgroundImage})` }
+    : {};
   return (
-    <div className={styles.hero}>
-      <h1>{title || HeroDefaultProps.title}</h1>
+    <div className={styles.hero} style={heroStyle}>
+      
     </div>
   );
 };
