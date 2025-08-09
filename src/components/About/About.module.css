@@ -1,0 +1,16 @@
+.about {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 4rem;
+}
+
+.about p {
+  font-size: 1rem;
+  opacity: 0.9;
+} 

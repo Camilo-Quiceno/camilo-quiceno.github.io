@@ -1,5 +1,6 @@
 import './App.css';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
 import heroBackground from './assets/images/hero/hero.jpg';
 
 const appConfig = {
@@ -10,11 +11,17 @@ const appConfig = {
     title3: 'Nu Colombia',
     backgroundImage: heroBackground,
   },
+  about: {
+    title: '- About -',
+  },
 };
 
 function App() {
   return (
-    <Hero {...appConfig.hero} />
+    <>
+      <Hero {...appConfig.hero} />
+      <About {...appConfig.about} />
+    </>
   );
 }
 
