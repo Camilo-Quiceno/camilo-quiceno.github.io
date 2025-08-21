@@ -1,6 +1,6 @@
 import './App.css';
 import Hero from './components/Hero/Hero';
-import About from './components/About/About';
+import Divider from './components/Divider/Divider';
 import heroBackground from './assets/images/hero/hero.jpg';
 
 const appConfig = {
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Hero {...appConfig.hero} />
-      <About {...appConfig.about} />
+      <Divider title=" - About - " />
     </>
   );
 }

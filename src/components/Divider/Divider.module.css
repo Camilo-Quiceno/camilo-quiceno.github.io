@@ -1,4 +1,4 @@
-.about {
+.divider {
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
@@ -6,11 +6,11 @@
   text-align: center;
 }
 
-.about h2 {
+.divider h2 {
   font-size: 4rem;
 }
 
-.about p {
+.divider p {
   font-size: 1rem;
   opacity: 0.9;
 } 
