@@ -15,6 +15,7 @@ const Hero = ({emoji, title1, title2, title3, backgroundImage}) => {
     <div className={styles.hero} style={heroStyle}>
       <h1>{emoji}</h1>
       <h1>{title1}</h1>
+      <br></br>
       <h2>{title2}</h2>
       <h3 className={styles.titleWithIcon}>
         <img src={nuIcon} alt="Nu" className={styles.icon} loading="lazy" decoding="async" />

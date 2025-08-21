@@ -1,16 +1,11 @@
 .divider {
-  padding: 2rem;
-  max-width: 800px;
+  padding: 1rem;
   margin: 0 auto;
   color: black;
+  background-color: #f0f0f0;
   text-align: center;
 }
 
 .divider h2 {
   font-size: 4rem;
 }
-
-.divider p {
-  font-size: 1rem;
-  opacity: 0.9;
-} 
