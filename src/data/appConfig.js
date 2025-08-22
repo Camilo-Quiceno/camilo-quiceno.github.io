@@ -116,5 +116,22 @@ export const appConfig = {
       place: "Normal Superior Copacabana",
       completion: "2009"
     }
-  ]
+  ],
+  contact: {
+    title: "Contact me!",
+    location: {
+      icon: "📍",
+      text: "Medellin, Antioquia"
+    },
+    phone: {
+      icon: "📞",
+      label: "Phone:",
+      text: "319 249 4403"
+    },
+    email: {
+      icon: "📩",
+      label: "Email:",
+      text: "camilo.quiceno.q@gmail.com"
+    }
+  }
 }; 

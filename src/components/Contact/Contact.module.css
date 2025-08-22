@@ -1,0 +1,140 @@
+.contactContainer {
+  padding: 2rem 1rem;
+  width: 70%;
+  margin: 0 auto;
+  color: black;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.titleColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+
+.contactTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(135deg, #1f2937, #374151);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.infoColumn {
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.contactItem:hover {
+  transform: translateY(-2px);
+}
+
+.contactLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contactLink:hover .contactItem {
+  background: #f8fafc;
+  border-color: #6366f1;
+}
+
+.icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  text-align: center;
+  align-items: center;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+  line-height: 1.4;
+}
+
+.noData {
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactContainer {
+    width: 90%;
+    padding: 1rem 0.5rem;
+  }
+  
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .titleColumn {
+    padding-top: 0;
+  }
+  
+  .contactTitle {
+    font-size: 2rem;
+  }
+  
+  .infoColumn {
+    gap: 1rem;
+  }
+  
+  .contactItem {
+    padding: 1rem;
+  }
+  
+  .icon {
+    font-size: 1.25rem;
+  }
+  
+  .text {
+    font-size: 0.9rem;
+  }
+} 
