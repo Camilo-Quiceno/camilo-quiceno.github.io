@@ -123,20 +123,32 @@ export const appConfig = {
     }
   ],
   contact: {
-    title: "Contact me!",
-    location: {
-      icon: "📍",
-      text: "Medellin, Antioquia"
-    },
-    phone: {
-      icon: "📞",
-      label: "Phone:",
-      text: "319 249 4403"
-    },
-    email: {
-      icon: "📩",
-      label: "Email:",
-      text: "camilo.quiceno.q@gmail.com"
-    }
+    title: "Shall We Get Started?",
+    buttons: [
+      {
+        icon: "📩",
+        text: "Email me",
+        href: "mailto:camilo.quiceno.q@gmail.com",
+        isClickable: true
+      },
+      {
+        icon: "🔗",
+        text: "LinkedIn",
+        href: "https://www.linkedin.com/in/camiloqq",
+        isClickable: true
+      },
+      {
+        icon: "💻",
+        text: "GitHub", 
+        href: "https://github.com/Camilo-Quiceno",
+        isClickable: true
+      },
+      {
+        icon: "📍",
+        text: "Medellín, Colombia",
+        href: "https://maps.app.goo.gl/hr3ZabntZ7pX3axUA",
+        isClickable: true
+      }
+    ]
   }
 }; 

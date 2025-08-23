@@ -1,20 +1,17 @@
 import React from 'react';
 import styles from './Contact.module.css';
 
-const ContactItem = ({ icon, label, text, isClickable, href }) => {
+const ContactButton = ({ icon, text, isClickable, href }) => {
   const content = (
-    <div className={styles.contactItem}>
+    <div className={styles.contactButton}>
       <span className={styles.icon}>{icon}</span>
-      <div className={styles.contactText}>
-        {label && <span className={styles.label}>{label} </span>}
-        <span className={styles.text}>{text}</span>
-      </div>
+      <span className={styles.text}>{text}</span>
     </div>
   );
 
   if (isClickable && href) {
     return (
-      <a href={href} className={styles.contactLink}>
+      <a href={href} className={styles.contactLink} target="_blank" rel="noopener noreferrer">
         {content}
       </a>
     );
@@ -34,25 +31,16 @@ const Contact = ({ contact }) => {
         <div className={styles.titleColumn}>
           <h2 className={styles.contactTitle}>{contact.title}</h2>
         </div>
-        <div className={styles.infoColumn}>
-          <ContactItem 
-            icon={contact.location.icon}
-            text={contact.location.text}
-          />
-          <ContactItem 
-            icon={contact.phone.icon}
-            label={contact.phone.label}
-            text={contact.phone.text}
-            isClickable={true}
-            href={`tel:+57${contact.phone.text.replace(/\s/g, '')}`}
-          />
-          <ContactItem 
-            icon={contact.email.icon}
-            label={contact.email.label}
-            text={contact.email.text}
-            isClickable={true}
-            href={`mailto:${contact.email.text}`}
-          />
+        <div className={styles.buttonsGrid}>
+          {contact.buttons && contact.buttons.map((button, index) => (
+            <ContactButton 
+              key={index}
+              icon={button.icon}
+              text={button.text}
+              isClickable={button.isClickable}
+              href={button.href}
+            />
+          ))}
         </div>
       </div>
     </div>
