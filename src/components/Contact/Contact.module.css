@@ -70,7 +70,7 @@
 }
 
 .contactLink:hover .contactButton {
-  background: #f8fafc;
+  background: #e3e6e8;
   border-color: #626769;
 }
 
@@ -95,7 +95,6 @@
   font-style: italic;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .contactContainer {
     width: 90%;
