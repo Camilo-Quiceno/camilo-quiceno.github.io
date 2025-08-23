@@ -16,13 +16,17 @@ export const appConfig = {
     image: profilePicture,
     description: (
       <>
-        With 2 years of experience as a <strong>Software Developer</strong> and a <strong>Master's in Data Science</strong>, I specialize in backend development and building data-driven solutions. Currently, I work as a Backend Developer in the Data In Team at Talent.com, where I transform unstructured job listings into valuable, structured data, enhancing platform functionality and user experience.
+        As a <strong>Software Engineer</strong> with over 3 years of experience and a <strong>Master's in Data Science</strong>, I specialize in designing and building scalable, data-driven solutions for large-scale distributed systems.
         <br></br>
         <br></br>
-        Over the past year, I joined the full migration of Talent.com's website from PHP to a modern microservices architecture using Go and TypeScript, deployed on Kubernetes and AWS. This migration not only improved scalability but also enabled the integration of AI-driven capabilities, setting the foundation for more dynamic and efficient platform performance. Additionally, I integrated real-time monitoring with Prometheus and Grafana to ensure optimal performance and resource utilization.        
+        Currently, at <strong>Nu</strong>, I apply my expertise in microservices to the FinTech sector. As part of the Upper Funnel Pack, my focus is on transforming customer curiosity into action. I collaborate with Product and Design teams to build and enhance the services that guide customers seamlessly through their journey, from their first interaction to product selection, ultimately empowering them to make informed financial decisions.
         <br></br>
         <br></br>
-        Before joining Talent.com, I worked at Materialise, where I led the <strong>Plastic Design Team</strong>, focusing on quality assurance in the design of customized surgical guides, ensuring they met the highest standards of precision and functionality.      </>
+        Previously, at <strong>Talent.com</strong>, I played a key role in the full migration of their website from a PHP monolith to a modern microservices architecture using Go and TypeScript, deployed on Kubernetes and AWS. During this project, I transformed unstructured job listings into valuable, structured data and integrated real-time monitoring with Prometheus and Grafana to ensure optimal performance. This migration significantly improved scalability and set the foundation for new AI-driven capabilities.
+        <br></br>
+        <br></br>
+        My earlier experience includes leading the <strong>Plastic Design Team</strong> at Materialise, where I focused on quality assurance for customized surgical guides to ensure the highest standards of precision.
+      </>
     )
   },
   companies: [
@@ -33,10 +37,11 @@ export const appConfig = {
           title: "Software Engineer",
           date: "Mar 2025 - Present",
           tasks: [
-            "Develop innovative software solutions in the fintech sector",
-            "Work with modern technologies in an agile environment",
-            "Collaborate with multidisciplinary teams to create digital financial products",
-            "Implement software development and architecture best practices"
+            "As a member of the Upper Funnel Pack, my role is to engineer the core services that guide customers through their initial journey. Our team's mission is to transform curiosity into action by designing and building a frictionless and intuitive architecture for selecting financial products",
+            "Collaborate in an agile environment with Product, Design, and Engineering teams to design and implement robust, end-to-end solutions for new user experiences and demand generation channels",
+            "Drive the adoption of software engineering principles and architectural best practices to ensure a highly available and resilient platform",
+            "Architect, build, and maintain scalable microservices that power the customer journey, from initial interaction to product selection",
+            "Engineer solutions within a large-scale distributed system, focusing on system design, performance, and long-term maintainability"
           ]
         }
       ]
