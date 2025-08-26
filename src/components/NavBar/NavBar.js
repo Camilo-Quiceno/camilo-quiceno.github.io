@@ -4,6 +4,7 @@ import styles from './NavBar.module.css';
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { id: 'home', label: 'Home', section: 'hero-section' },
@@ -47,14 +48,20 @@ const NavBar = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const navbarHeight = 70;
-      const offsetTop = element.offsetTop - navbarHeight;
+
+      const offsetTop = element.offsetTop;
       
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth'
       });
+      
+      setIsMobileMenuOpen(false);
     }
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -64,7 +71,18 @@ const NavBar = () => {
           <span className={styles.logoText}>CQQ</span>
         </div>
         
-        <ul className={styles.navMenu}>
+        {/* Botón hamburguesa */}
+        <button 
+          className={styles.hamburger}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+        >
+          <span className={`${styles.hamburgerLine} ${isMobileMenuOpen ? styles.hamburgerLineActive : ''}`}></span>
+          <span className={`${styles.hamburgerLine} ${isMobileMenuOpen ? styles.hamburgerLineActive : ''}`}></span>
+          <span className={`${styles.hamburgerLine} ${isMobileMenuOpen ? styles.hamburgerLineActive : ''}`}></span>
+        </button>
+        
+        <ul className={`${styles.navMenu} ${isMobileMenuOpen ? styles.navMenuOpen : ''}`}>
           {navItems.map((item) => (
             <li key={item.id} className={styles.navItem}>
               <button

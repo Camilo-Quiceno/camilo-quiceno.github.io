@@ -3,7 +3,15 @@
 }
 
 body {
+  padding-top: 0;
+}
+
+#about-section,
+#experience-section,
+#education-section,
+#contact-section {
   padding-top: 70px;
+  margin-top: -70px;
 }
 
 html {

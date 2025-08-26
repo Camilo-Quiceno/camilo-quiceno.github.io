@@ -7,6 +7,8 @@
   justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
+  top: 0;
   
   background-image: url('../../assets/images/hero/hero.jpg');
   background-size: cover;
@@ -20,6 +22,7 @@
   font-size: 5rem;
   margin: 0;
   font-weight: 700;
+  text-align: center;
 }
 
 .hero h2 {
@@ -27,6 +30,7 @@
   font-size: 1.5rem;
   margin: 0;
   font-weight: 700;
+  text-align: center;
 }
 
 .titleWithIcon {
@@ -44,12 +48,26 @@
   border-radius: 4px;
 }
 
+.hero .emoji {
+  font-size: 6rem;
+  text-align: center;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
+    text-align: center;
   }
   
   .hero h2 {
     font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero .emoji {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1rem;
   }
 } 

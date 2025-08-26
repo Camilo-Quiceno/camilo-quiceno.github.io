@@ -13,7 +13,7 @@ const Hero = ({emoji, title1, title2, title3, backgroundImage}) => {
     : {};
   return (
     <div className={styles.hero} style={heroStyle}>
-      <h1>{emoji}</h1>
+      <h1 className={styles.emoji}>{emoji}</h1>
       <h1>{title1}</h1>
       <br></br>
       <h2>{title2}</h2>

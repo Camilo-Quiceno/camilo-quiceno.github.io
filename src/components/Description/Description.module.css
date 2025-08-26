@@ -31,6 +31,12 @@
 @media (max-width: 768px) {
   .description {
     grid-template-columns: 1fr;
+    width: 85%;
     gap: 1rem;
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
   }
 }
