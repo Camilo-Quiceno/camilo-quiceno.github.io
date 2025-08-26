@@ -1,6 +1,6 @@
 .tableContainer {
-  padding: 2rem 1rem;
-  width: 70%;
+  padding: var(--padding-section);
+  width: var(--container-width-desktop);
   margin: 0 auto;
   overflow-x: auto;
 }
@@ -33,20 +33,20 @@
 }
 
 .tableRow:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: var(--color-bg-light);
 }
 
 .tableRow:hover {
-  background-color: #e3f2fd;
+  background-color: var(--color-bg-hover);
 }
 
 .backgroundCell,
 .placeCell,
 .completionCell {
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid #e5e7eb;
-  color: #374151;
+  border-bottom: 1px solid var(--border-gray);
   line-height: 1.5;
+  color: var(--color-text-medium);
 }
 
 .backgroundCell {
@@ -54,13 +54,13 @@
   color: #1f2937;
 }
 
-.placeCell {
+.placeCell,
+.completionCell {
   color: #000000;
 }
 
 .completionCell {
   font-weight: 500;
-  color: #000000;
 }
 
 .noData {
@@ -80,11 +80,16 @@
   .placeCell,
   .completionCell {
     padding: 0.75rem 1rem;
-    font-size: 0.875rem;
   }
   
   .headerCell {
     font-size: 0.75rem;
+  }
+  
+  .backgroundCell,
+  .placeCell,
+  .completionCell {
+    font-size: 0.875rem;
   }
 }
 

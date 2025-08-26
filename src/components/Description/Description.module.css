@@ -1,8 +1,8 @@
 .description {
   padding: 1rem;
-  width: 70%;
+  width: var(--container-width-desktop);
   margin: 0 auto;
-  color: black;
+  color: var(--color-black);
   text-align: justify;
   white-space: pre-line;
   line-height: 1.5;
@@ -31,9 +31,10 @@
 @media (max-width: 768px) {
   .description {
     grid-template-columns: 1fr;
-    width: 85%;
+    width: var(--container-width-mobile);
     gap: 1rem;
   }
+  
   .image {
     width: 200px;
     height: 200px;

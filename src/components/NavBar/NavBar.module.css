@@ -7,13 +7,12 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: var(--transition-all);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.95);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-light);
   opacity: 0.97;
 }
 
@@ -58,24 +57,26 @@
   border: none;
   font-size: 1rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--color-white);
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  transition: all 0.3s ease;
+  transition: var(--transition-all);
   position: relative;
   text-decoration: none;
 }
 
-.navLink:hover {
+.navLink:hover,
+.navLink.active {
   color: #ffffff;
   background: #626769;
+}
+
+.navLink:hover {
   transform: translateY(-2px);
 }
 
 .navLink.active {
-  color: #ffffff;
-  background: #626769;
   font-weight: 600;
 }
 
@@ -91,7 +92,6 @@
   border-radius: 2px;
 }
 
-/* Estilos del botón hamburguesa */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -132,12 +132,10 @@
     height: 60px;
   }
 
-  /* Mostrar botón hamburguesa */
   .hamburger {
     display: flex;
   }
 
-  /* Ocultar menu por defecto en móvil */
   .navMenu {
     position: fixed;
     top: 60px;
@@ -156,7 +154,6 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  /* Mostrar menu cuando está abierto */
   .navMenu.navMenuOpen {
     transform: translateY(0);
     opacity: 1;

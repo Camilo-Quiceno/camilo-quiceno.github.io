@@ -1,8 +1,8 @@
 .contactContainer {
-  padding: 2rem 1rem;
-  width: 70%;
+  padding: var(--padding-section);
+  width: var(--container-width-desktop);
   margin: 0 auto;
-  color: black;
+  color: var(--color-black);
 }
 
 .contactGrid {
@@ -22,14 +22,13 @@
 .contactTitle {
   font-size: 3rem;
   font-weight: 700;
-  color: #1f2937;
   text-align: center;
   margin: 0;
-  background: linear-gradient(135deg, #1f2937, #374151);
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--color-text-dark), var(--color-text-medium));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1.2;
 }
 
 .buttonsGrid {
@@ -50,10 +49,10 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1.5rem 1rem;
-  background: white;
+  background: var(--color-white);
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  border: 1px solid var(--border-gray);
+  transition: var(--transition-transform), var(--shadow-hover), var(--transition-background);
   text-align: center;
   min-height: 50px;
   cursor: pointer;
@@ -78,8 +77,6 @@
   font-size: 1.5rem;
   flex-shrink: 0;
 }
-
-
 
 .text {
   font-size: 1rem;

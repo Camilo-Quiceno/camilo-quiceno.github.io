@@ -1,8 +1,8 @@
 .divider {
   padding: 1rem;
   margin: 0 auto;
-  color: black;
-  background-color: #f0f0f0;
+  color: var(--color-black);
+  background-color: var(--color-bg-gray);
   text-align: center;
 }
 
