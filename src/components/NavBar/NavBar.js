@@ -49,7 +49,7 @@ const NavBar = () => {
     const element = document.getElementById(sectionId);
     if (element) {
 
-      const offsetTop = element.offsetTop;
+      const offsetTop = element.offsetTop + 8;
       
       window.scrollTo({
         top: offsetTop,
@@ -71,7 +71,6 @@ const NavBar = () => {
           <span className={styles.logoText}>CQQ</span>
         </div>
         
-        {/* Botón hamburguesa */}
         <button 
           className={styles.hamburger}
           onClick={toggleMobileMenu}
