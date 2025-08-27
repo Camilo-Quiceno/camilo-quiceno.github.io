@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import styles from './NavBar.module.css';
 
+// Datos estáticos fuera del componente para evitar re-renders innecesarios
+const navItems = [
+  { id: 'home', label: 'Home', section: 'hero-section' },
+  { id: 'about', label: 'About', section: 'about-section' },
+  { id: 'experience', label: 'Experience', section: 'experience-section' },
+  { id: 'education', label: 'Education', section: 'education-section' },
+  { id: 'contact', label: 'Contact', section: 'contact-section' }
+];
+
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const navItems = [
-    { id: 'home', label: 'Home', section: 'hero-section' },
-    { id: 'about', label: 'About', section: 'about-section' },
-    { id: 'experience', label: 'Experience', section: 'experience-section' },
-    { id: 'education', label: 'Education', section: 'education-section' },
-    { id: 'contact', label: 'Contact', section: 'contact-section' }
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
