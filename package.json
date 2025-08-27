@@ -2,6 +2,7 @@
   "name": "personal-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://camilo-quiceno.github.io/",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
