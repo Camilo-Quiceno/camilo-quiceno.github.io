@@ -7,13 +7,23 @@ import Timeline from './components/Timeline/Timeline';
 import EducationTable from './components/EducationTable/EducationTable';
 import Contact from './components/Contact/Contact';
 import { appConfig } from './data/appConfig';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
   return (
     <>
       <NavBar />
       <div id="hero-section">
-        <Hero {...appConfig.hero} />
+        <Hero {...appConfig.hero} isMobile={isMobile} />
       </div>
       <div id="about-section">
         <Divider title={appConfig.about.title} />

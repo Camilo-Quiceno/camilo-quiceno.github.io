@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './NavBar.module.css';
 
-// Datos estáticos fuera del componente para evitar re-renders innecesarios
 const navItems = [
   { id: 'home', label: 'Home', section: 'hero-section' },
   { id: 'about', label: 'About', section: 'about-section' },

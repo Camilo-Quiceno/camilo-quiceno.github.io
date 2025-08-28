@@ -5,8 +5,11 @@ export const appConfig = {
   hero: {
     emoji: '👋',
     title1: 'CQQ - Camilo Quiceno Quintero',
+    title1Mobile: (<><br></br>CQQ <br></br> Camilo Quiceno Quintero <br></br></>),
     title2: '💻 🟪 Data-Powered Software Engineer | 🎓 MSc Data Science',
+    title2Mobile: (<><br></br>💻 🟪 Data-Powered Software Engineer <br></br> 🎓 MSc Data Science <br></br><br></br></>),
     title3: 'Nu Colombia',
+    heroText: '💻 🟪 Data-Powered Software Engineer | 🎓 MSc Data Science',
     backgroundImage: heroBackground,
   },
   about: {
